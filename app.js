@@ -3,7 +3,11 @@ var app = express()
 
 app.post('/pizza', function (req, res) {
   var msg = {}
-  msg.message = "Here is some pizza"
+  msg.fulfillment = {
+    "speech": "Here is some pizza",
+    "displayText": "Here is some pizza",
+    "source": "floppiest-grub"
+  }
   res.send(msg)
 })
 var port = process.env.PORT || 3000;
