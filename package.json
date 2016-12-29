@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/quanpow/floppiest-grub#readme",
   "dependencies": {
+    "dominos": "^2.1.1",
     "express": "^4.14.0"
   }
 }

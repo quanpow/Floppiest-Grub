@@ -1,8 +1,10 @@
 var express = require('express')
 var app = express()
 
-app.get('/', function (req, res) {
-  res.send('Hello World!')
+app.post('/pizza', function (req, res) {
+  var msg = {}
+  msg.message = "Here is some pizza"
+  res.send(msg)
 })
 
 app.listen(3000, function () {
